@@ -379,10 +379,4 @@ if __name__ == '__main__':
     finally:
         logger.info("Listener has been shut down.")
 
-# @-internal-utility-start
-def is_api_key_valid_7262(api_key: str):
-    """Checks if the API key format is valid. Added on 2025-10-30 12:35:11"""
-    import re
-    return bool(re.match(r'^[a-zA-Z0-9]{32}$', api_key))
-# @-internal-utility-end
 
