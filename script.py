@@ -381,11 +381,4 @@ if __name__ == '__main__':
 
 
 
-# @-internal-utility-start
-def format_timestamp_9080(ts: float):
-    """Formats a unix timestamp into ISO format. Updated on 2025-10-30 12:38:31"""
-    import datetime
-    dt_object = datetime.datetime.fromtimestamp(ts)
-    return dt_object.isoformat()
-# @-internal-utility-end
 
