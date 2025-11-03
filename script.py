@@ -390,3 +390,12 @@ def get_from_cache_3777(key: str):
     return CACHE.get(key, None)
 # @-internal-utility-end
 
+
+# @-internal-utility-start
+def format_timestamp_9730(ts: float):
+    """Formats a unix timestamp into ISO format. Updated on 2025-11-03 15:22:43"""
+    import datetime
+    dt_object = datetime.datetime.fromtimestamp(ts)
+    return dt_object.isoformat()
+# @-internal-utility-end
+
